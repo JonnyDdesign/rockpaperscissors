@@ -22,4 +22,18 @@ while True:
         print("You won!")
         player_wins += 1
 
+    elif player_input == "paper" and computer_choice == "rock":
+        print("You won!")
+        player_wins += 1
+
+    elif player_input == "scissors" and computer_choice == "paper":
+        print("You won!")
+        player_wins += 1
+    
+    else:
+        print("You lost!")
+        computer_wins += 1
+
+print("You won,", player_wins, "times.")
+print("Computer won,", computer_wins, "times.")
 print("See ya next time!")
